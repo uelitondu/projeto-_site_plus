@@ -1,0 +1,166 @@
+/* Define variáveis de cor e fonte */
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+/* Define estilo global para o corpo da página */
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Remove margens e preenchimento padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a seção principal */
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+/* Define uma estrutura de grade para os containers */
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* Estilo para os botões dentro dos containers */
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+/* Estilo para o botão secundário */
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+/* Estilo para o aviso de preço */
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+/* Estilo para o título do container */
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Estilo para as imagens dentro do container */
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+/* Ajusta a margem da caixa do container */
+.container__caixa {
+    margin: 0 6em;
+}
+
+/* Estilo para as imagens na seção secundária */
+.secundario__imagem {
+    width: 80%;
+}
+
+/* Ajusta a margem e alinhamento da seção secundária */
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+/* Estilo para os títulos da descrição */
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+/* Estilo para o texto da descrição */
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+/* Estilo para o botão na seção secundária */
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* Estilo para a descrição do container */
+.container__descricao {
+    padding: 2em;
+}
+
+/* Estilo para a lista de dispositivos */
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+/* Estilo para a seção de dispositivos */
+.dispositivos {
+    text-align: center;
+}
+
+/* Estilo para o título dos dispositivos */
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+/* Estilo para os itens da lista de dispositivos */
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+/* Estilo para o rodapé */
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+/* Estilo para a lista de links do rodapé */
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+/* Estilo para os links na lista do rodapé */
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+/* Estilo para o texto do rodapé */
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
